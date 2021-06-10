@@ -31,9 +31,11 @@ github_username:  beyondrisks
 
 # Build settings
 # theme: minima
-theme: minimal-mistakes-jekyll
+# theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
+remote_theme: "mmistakes/minimal-mistakes@4.23.0"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
