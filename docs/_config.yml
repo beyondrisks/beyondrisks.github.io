@@ -20,7 +20,7 @@ title                    : "Beyond Risks -- We do analytics"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Beyond Risks"
-description              : "An amazing website."
+description              : "A website about econometrics, data analytics, credit risks..."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -98,11 +98,11 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "We do analytics"
   location         : "United States"
-  email            :
+  email            : beyondrisks@outlook.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      # url: "beyondrisks@outlook.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
