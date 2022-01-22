@@ -2,17 +2,15 @@
 layout: single
 title:  "SAS to Python: Read Data"
 date:   2022-01-22
-categories: code, SAS, Python
+categories: code SAS Python
 ---
 
-As much as we love SAS, we cannot deny the trend that Python is replacing SAS in a very fast pace. In this artical we will discuss how to use Python to do some most common SAS usages, such as reading and cleaning data, statistical analysis, and statistical or econometric modeling. The main packages used in Python are Pandas and Numpy for data related tasks and some statistical analysis, and Siklearn for modeling. 
+As much as we love SAS, we cannot deny the trend that Python is replacing SAS in a very fast pace. In this artical we will discuss how to use Python to read data. The data Python package used here is `pandas`. 
 
-## Read Data
 The first thing of data analysis is usually to read data. There are tons of scenarios regarding reading how to read data in SAS depending on the data format. The two methods used in SAS are `proc import` and the combination of `infile` and `input` statements. `Proc import` can be used for well formatted data such as CSV file, Excel file while infile and input can be more flexible.  
 
-### Formatted Data with Delimiter
-This type data is separated by as delimiter, such as comma, space, tab or other characters. The following data is separated by comma. 
-
+## read_csv
+One of the most common data files is the one in which data are separated by some delimiters, such as comma, space, tab or other characters. The following data are separated by comma. 
 
 |id,name,age|
 |---------|
@@ -47,7 +45,38 @@ employee = pd.read_csv('to_be_read_file.txt', sep=',', usecols=[0, 2])
 
 **Column Names** If the column names are included in the first row of the raw file as in the example above, `read_csv` function reads them as column names by default. On the other side, if there are no column names in the raw data file, one can specify the column names using option `names` in the function. Let's assume another example without the first line, the following command can read the file and assign names to the columns.
 ```Python
+# specify the column names
 employee = pd.read_csv('to_be_read_file.txt', sep=',', names=['id', 'name', 'age'])
 ```
 
+**Data Type** In SAS `import` proc the data type of one column is inferred from the raw data. One can specify the number of rows used to determined the data type by using the statement `guessingrows=100;`. Here 100 is the number of lines one can specify. In the Python `read_csv` function, one can actually specify the data type for individual columns by using the option `dtype` which takes a dictionary with column name as a key and data type as the correspoonding value. The following example specifies the data type of 'int32' for the column id and 'int16' for the column age.
+```Python
+# specify the date types
+employee = pd.read_csv('to_be_read_file.txt', sep=',', dtype={'id': 'int32', 'age': 'int16'})
+```
 
+When one need more flexibility in handling data, one would switch the combination of `input` and `infile` statements in SAS. One example is that when we need to read a string or a number as a date. This can be achieved by using `informat` statement together with `input` and `infile` in SAS. But it can be easily done in Python using the option `date_parse` in the function `read_csv`. Let's add one more column 'birthday' to the above example.
+|id,name,age, birthday|
+|---------|
+|1,Mike,23,02131998|
+|2,Bob,49,02131997|
+|3,Eric,10,10301988|
+
+The code below reads the birthday into a date column. The value of `parse_date` can be a list of column numbers or column names.
+```Python
+# read birthday to a date
+employee = pd.read_csv('to_be_read_file.txt', sep=',', parse_date=['birthday'])
+```
+## read_fwf
+Another example is that data files are not delimiter separated, but each column starts from fixed position and has fixed length. In SAS we use `@n` to specify the starting position of one column in the `input` statement. There is another function in pandas called `read_fwf`. The main syntax is as follows.
+```Python
+# read_fwf
+pd.read_fwf('to_be_read_file.txt', colspecs=[(0, 5), (10, 14)])
+```
+The parameter `colspecs` is a list of tuples and each tuple includes the starting and ending position of each column.
+
+## Summary
+1. `read_csv` reads delimited data. One can specify the columns to be read, set the column names, specify the delimiters, specify the data type and a lot more.
+2. `read_fwf` reads data with fixed starting and ending positions.
+
+There are lots of other complicated data files that cannot be read either by `read_csv` or `read_fwf` such as unformated data file. In those cases, one need to use `open()` to read file line by line and handle them case by case.
