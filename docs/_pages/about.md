@@ -17,4 +17,6 @@ excerpt: "Beyond Risks does econometrics and data analytics."
 # toc: true
 ---
 
-We are a group of Ph.Ds who have many years of experience in financial modeling area. We share our knowledge in econometrics,  data analytics and financial modeling here. We also share some coding tips and tricks, especially of Python.  
+We are a group of Ph.Ds who have many years of experience in financial modeling area. We share our knowledge in econometrics,  data analytics and financial modeling here. We also share some coding tips and tricks, especially of Python. 
+
+We proudly offer econometrics tutoring, consulting and professional support for financial modeling. We can be reached by [email](beyondrisks@outlook.com) and can also be found in [Fiverr](https://www.fiverr.com/beyondrisks). 

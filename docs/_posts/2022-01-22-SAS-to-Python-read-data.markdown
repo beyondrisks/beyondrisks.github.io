@@ -1,6 +1,7 @@
 ---
 layout: single
 title:  "SAS to Python: Read Data"
+classes: wide
 date:   2022-01-22
 categories: code SAS Python
 ---
