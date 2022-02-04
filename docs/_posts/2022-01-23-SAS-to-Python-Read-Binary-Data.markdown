@@ -1,12 +1,15 @@
 ---
 layout: single
 title:  "SAS to Python: Read Binary Numerical Data"
-date:   2022-01-23
+last_modified_at: 2022-02-04
 classes: wide
-categories: code SAS Python
+categories:
+  - code
+  - SAS
+  - Python
 ---
 
-In this artical we will discuss the difference in reading binary numerical data between SAS and Python.
+In this article we will discuss the difference in reading binary numerical data between SAS and Python.
 
 ## Byte Order
 
@@ -17,9 +20,10 @@ Integer values for integer binary data are typically stored in one of three size
 SAS uses informats to read the binary data and the corresponding formats for writing the binary data. The common informats are IB*w.d*, PIB*w.d*. 
 
 __IB*w.d*__: for integer binary values. *w* specifies the width of the input fields and *d* is a scaling factor and specifies the power of 10 that divides the integer.
+
 __PIB*w.d*__: for positive integer binary values.
 
-Note that when using `infile` statement to open a binary file, one has to specify option `recfm` to value `n` so that SAS knows the file is a binary file.
+> Note that when using `infile` statement to open a binary file, one has to specify option `recfm` to value `n` so that SAS knows the file is a binary file.
 
 ## Python
 
