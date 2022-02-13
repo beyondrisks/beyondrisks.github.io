@@ -86,11 +86,12 @@ social:
 
 # Analytics
 analytics:
-  provider               : "google" # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          : G-FPN3XBMRHL
+    tracking_id          : 
     anonymize_ip         : # true, false (default)
 
+google_analytics: G-FPN3XBMRHL
 
 # Site Author
 author:
