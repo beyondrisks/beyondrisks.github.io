@@ -1,3 +1,5 @@
 docs/_config.yml.bak
 docs/Gemfile.bak
 .DS_Store
+.jekyll-cache/
+_site
