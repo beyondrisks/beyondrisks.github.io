@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "SAS to Python: Dfferent Length of Special Characters"
+title:  "SAS to Python: Different Length of Special Characters"
 last_modified_at: 2022-02-10
 classes: wide
 categories:
@@ -8,9 +8,9 @@ categories:
   - SAS
   - Python
 ---
-I had this unicode related issue when I was converting some SAS codes to python for a client from Europe. I would otherwise never knew the difference between SAS and Python. I will share what I found in this article. Please note that this article is not a comprehensive discussion about the unicode, but just focuses on a tiny issue. 
+I had this unicode related issue when I was converting some SAS codes to python for a client from Europe. I would otherwise never knew the difference between SAS and Python. Let me share what I found in this article. Please note that this article is not a comprehensive discussion about the unicode, but just focuses on a tiny issue. 
 
-The lengths of the special charaters are different in SAS and Python. For example, the length of __ö__ is three using `length` function in SAS, but is 2 using `len` function in Python. Another example is __♞__ whose length is 3 in SAS and 1 in Python. 
+The lengths of the special characters are different in SAS and Python. For example, the length of __ö__ is three using `length` function in SAS, but is 2 using `len` function in Python. Another example is __♞__ whose length is 3 in SAS and 1 in Python. 
 
 ## Why it matters?
 
@@ -28,7 +28,7 @@ It turns out that in SAS the length of a string is calculated on UTF-8 encoding.
 'a♞dicefkdl'.encode()[:5].decode()
 {% endhighlight %}
 
-**Method 2** adjust the slicing length first. Find the length difference between UTF-8 encoding and normal form first and then substract the difference from the requested length of the string. The following code gives the correct answer.
+**Method 2** adjust the slicing length first. Find the length difference between UTF-8 encoding and normal form first and then subtract the difference from the requested length of the string. The following code gives the correct answer.
 {% highlight python %}
 len_new = 5 - len('a♞dicefkdl'.encode()) - len('a♞dicefkdl')
 'a♞dicefkdl'[:len_new]
