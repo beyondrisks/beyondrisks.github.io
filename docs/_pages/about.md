@@ -1,8 +1,8 @@
 ---
 layout: single
 permalink: /about/
-title: "About"
-excerpt: "Beyond Risks does econometrics and data analytics."
+title: "About us"
+# excerpt: "Beyond Risks does econometrics and data analytics."
 # layouts_gallery:
 #   - url: /assets/images/mm-layout-splash.png
 #     image_path: /assets/images/mm-layout-splash.png
@@ -17,6 +17,12 @@ excerpt: "Beyond Risks does econometrics and data analytics."
 # toc: true
 ---
 
-We are a group of Ph.Ds who have many years of experience in financial modeling area. We share our knowledge in econometrics,  data analytics and financial modeling here. We also share some coding tips and tricks, especially of Python. 
 
-We proudly offer econometrics tutoring, consulting and professional support for financial modeling. We can be reached by [email](beyondrisks@outlook.com) and can also be found in [Fiverr](https://www.fiverr.com/beyondrisks). 
+Welcome to The Model Advantage, a leading provider of statistical modeling and machine learning solutions with extensive experience in credit risk modeling. At our core, we are a team of dedicated data scientists, engineers, and analysts who are passionate about utilizing the latest technologies to help our clients make better decisions, optimize their operations, and achieve their goals.
+
+Our team is highly skilled in a wide range of statistical modeling and machine learning techniques, including logistic regression, decision trees, neural networks, deep learning and more. We also have experience working with a variety of data types and sources, from structured data in relational databases to unstructured data in social media and text documents.
+
+At our company, we believe that the key to success lies in building strong relationships with our clients. That's why we work closely with each of our clients to understand their unique challenges and goals, and to develop solutions that are tailored to meet their specific needs. With our focus on quality, accuracy, and reliability, you can trust that your statistical modeling and machine learning needs are in good hands with us.
+
+
+Have Questions? [Contact us](mailto: contact@themodeladvantage.com).

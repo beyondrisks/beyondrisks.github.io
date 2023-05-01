@@ -8,7 +8,7 @@ categories:
   - SAS
   - Python
 ---
-I had this unicode related issue when I was converting some SAS codes to python for a client from Europe. I would otherwise never knew the difference between SAS and Python. Let me share what I found in this article. Please note that this article is not a comprehensive discussion about the unicode, but just focuses on a tiny issue. 
+I would like to share the difference between SAS and Python in dealing with special characters in this artical. Please note that this article is not a comprehensive discussion about the unicode, but just focuses on a tiny issue. 
 
 The lengths of the special characters are different in SAS and Python. For example, the length of __ö__ is three using `length` function in SAS, but is 2 using `len` function in Python. Another example is __♞__ whose length is 3 in SAS and 1 in Python. 
 
