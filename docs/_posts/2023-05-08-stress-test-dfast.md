@@ -1,28 +1,33 @@
 ---
 layout: single
-title:  "Stress Test -- DFAST"
-last_modified_at: 2023-05-08
+title:  "Stress Test -- CCAR and DFAST"
+last_modified_at: 2023-05-13
 classes: wide
 categories:
   - credit risk
   - statistical model
   - stress test
   - DFAST
+  - CCAR
 ---
 
 ## Overview
 
-DFAST stands for Dodd-Frank Act Stress Test. It is an annual stress test conducted by the Federal Reserve as required by the Dodd-Frank Act of 2010. It requires that large banks predict their performance in the future 9 quarters under a range of stress scenarios to evaluate their capital adequacy.
+The Dodd-Frank Act Stress Test (DFAST, aka stress test) and Comprehensive Capital Analysis and Review (CCAR) are two primary components of the Federal Reserve's capital assessment of large banks. DFAST or the stress test is a forward-looking quantitative evaluation of banks' capital adequacy under a range of stress scenarios to evaluate their capital adequacy. CCAR included both qualitative and quantitative assessments during the first several years. The quantitative assessment in CCAR is conducted using DFAST. The qualitative part has been replaced with the stress capital buffer. 
 
 ## Supervisory Stress Test Scenarios
 
 The stress test scenarios are designed by Federal Reserve. They include a baseline scenario and a severely adverse scenario. 
 1. Baseline scenario: a profile similar to that of average projections from a survey of economic forecasters.
-2. Severely adverse scenario is a hypothetical set of conditions in an adverse economic environment. You can visualize the economic environment through the charts in the last section of the article.
+2. Severely adverse scenario is a hypothetical set of conditions in an adverse economic environment. It is characterized by a severe global recession accompanied by a period of heightened stress in both commercial and residential real estate markets, as well as in corporate debt markets. The main points are listed in the following. 
+   1. The U.S. unemployment rate rises nearly 6½ percentage points from the starting point of the scenario in the fourth quarter of 2022 to its peak of 10 percent in the third quarter of 2024.
+   2. There is a 38 percent decline in house prices and a 40 percent decline in commercial real estate prices. 
+   3. The international portion of the scenario features recessions in four countries or country blocs, with heightened stress in advanced economies, followed by declines in inflation and an appreciation in the value of the U.S. dollar against those countries’ currencies, except for the Japanese yen. 
+You can visualize and compare the economic environments in baseline and severely adverse scenarios through the charts in the last section of the article.
 
 ### Some Facts of Scenarios
 - **Time period of scenarios**: 9 quarters.
-- **Sets of Variables for Domestic Economic Condition**
+- **Variables Characterizing Domestic Economic Condition**
     - real / nominal GDP growth
     - real / nominal disposable personal income growth
     - Consumer Price Index (CPI) inflation rate
@@ -37,7 +42,7 @@ The stress test scenarios are designed by Federal Reserve. They include a baseli
     - 10-year BBB corporate yield
     - mortgage rate
     - prime rate
-- **Sets of Variables for International Economic Condition**: three variables in four countries or country blocs. 
+- **Variables Characterizing International Economic Condition**: three variables in four countries or country blocs. 
     - real GDP growth in euro area, United Kingdom, developing Asia and Japan
     - CPI inflation rate in euro area, United Kingdom, developing Asia and Japan
     - bilateral dollar exchange rate in euro area, United Kingdom, developing Asia and Japan 
@@ -86,4 +91,5 @@ The Federal Reserve regulates the DFAST stress test, which is aimed at evaluatin
 
 > Note: all the data are downloaded from [Federal Reserve's website](https://www.federalreserve.gov/supervisionreg/dfa-stress-tests-2023.htm).
 
-{% include dfast_scenarios.html %}
+{% include dfast_scenarios_domestic.html %}
+{% include dfast_scenarios_international.html %}
