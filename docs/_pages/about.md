@@ -2,27 +2,31 @@
 layout: single
 permalink: /about/
 title: "About us"
-# excerpt: "Beyond Risks does econometrics and data analytics."
-# layouts_gallery:
-#   - url: /assets/images/mm-layout-splash.png
-#     image_path: /assets/images/mm-layout-splash.png
-#     alt: "splash layout example"
-#   - url: /assets/images/mm-layout-single-meta.png
-#     image_path: /assets/images/mm-layout-single-meta.png
-#     alt: "single layout with comments and related posts"
-#   - url: /assets/images/mm-layout-archive.png
-#     image_path: /assets/images/mm-layout-archive.png
-#     alt: "archive layout example"
-# last_modified_at: 2020-05-01T10:15:22-04:00
-# toc: true
 ---
 
 
-Welcome to The Model Advantage, a leading provider of statistical modeling and machine learning solutions with extensive experience in credit risk modeling. At our core, we are a team of dedicated data scientists, engineers, and analysts who are passionate about utilizing the latest technologies to help our clients make better decisions, optimize their operations, and achieve their goals.
+Welcome to The Model Advantage, a minority-owned small business. At our core, we are a team of dedicated economists, data scientists, engineers, and analysts who have extensive experience in model development and model validation, especially in the mortgage and banking industries. Our team also have a deep understanding of regulatory landscape.
 
-Our team is highly skilled in a wide range of statistical modeling and machine learning techniques, including logistic regression, decision trees, neural networks, deep learning and more. We also have experience working with a variety of data types and sources, from structured data in relational databases to unstructured data in social media and text documents.
+In particular, we offer model development, model validation, and custom software development services.
+
+1. Model Development Service
+   
+Our team uses advanced statistical techniques and machine learning algorithms to develop models that are both accurate and reliable. We are committed to staying up-to-date with the latest developments in the field, ensuring that we are always using the most advanced techniques and tools available.
+
+With years of experience in developing models for credit risk and prepayment risk, our team of experts is well-equipped to create accurate and reliable models for your business. Our models are designed to meet regulatory requirements, such as those for [CCAR and DFAST stress tests]({% post_url 2023-05-08-stress-test-dfast %}), while also providing valuable insights into your business's performance. 
+    
+We understand the importance of transparency and documentation in model development and validation. As such, we provide our clients with detailed model documentation that describes the model choice, model assumptions, data processing steps, optimizing process, test results, procedures of implementation, and references. We believe that clear and comprehensive documentation is essential to ensuring that our clients understand the models we develop and can use them effectively.
+
+2. Model Validation Service
+
+Model validation is a critical step in ensuring that your models are accurate, reliable, and perform as expected. At our company, we understand the importance of model validation and the impact that inaccurate models can have on your business.
+
+Our team of experts uses the latest tools and techniques to test and validate models, ensuring that they meet your business needs and comply with regulatory requirements. We provide detailed reports explaining our findings and recommendations for improvement if necessary. We take model validation seriously, and we are committed to helping our clients ensure that their models are accurate, reliable, and compliant with regulatory requirements.
+
+3. Custom Software Development Service
+   
+Our team can work with you to create customized software solutions that automate business processes, streamline operations, and improve efficiency. Whether you need to convert legacy SAS code to Python and Spark, create data pipelines, or develop dashboards and model emulators, we have the expertise to help you succeed. Our coding solutions are designed to be efficient, scalable, and user-friendly, so you can get the most out of your data and operations
 
 At our company, we believe that the key to success lies in building strong relationships with our clients. That's why we work closely with each of our clients to understand their unique challenges and goals, and to develop solutions that are tailored to meet their specific needs. With our focus on quality, accuracy, and reliability, you can trust that your statistical modeling and machine learning needs are in good hands with us.
-
 
 Have Questions? [Contact us](mailto: contact@themodeladvantage.com).
