@@ -3,36 +3,36 @@ layout: splash
 permalink: /
 hidden: true
 header:
-#   overlay_color: "#5e616c"
-  overlay_image: /assets/images/home_banner.png
+  overlay_color: "#5e616c"
+  overlay_image: /assets/images/home_banner_balloon.png
 #   actions:
 #     - label: "<i class='fas fa-download'></i> Learn More"
 #       url: "/about/"
 excerpt: >
   We utilize data, statistics, and cutting-edge machine learning techniques to solve your business problems. <br />
   <small><a href="/about/">Learn More</a></small>
-# feature_row:
-#   - image_path: /assets/images/mm-customizable-feature.png
-#     alt: "customizable"
-#     title: "Super customizable"
-#     excerpt: "Everything from the menus, sidebars, comments, and more can be configured or set with YAML Front Matter."
-#     url: "/docs/configuration/"
-#     btn_class: "btn--primary"
-#     btn_label: "Learn more"
-#   - image_path: /assets/images/mm-responsive-feature.png
-#     alt: "fully responsive"
-#     title: "Responsive layouts"
-#     excerpt: "Built with HTML5 + CSS3. All layouts are fully responsive with helpers to augment your content."
-#     url: "/docs/layouts/"
-#     btn_class: "btn--primary"
-#     btn_label: "Learn more"
-#   - image_path: /assets/images/mm-free-feature.png
-#     alt: "100% free"
-#     title: "100% free"
-#     excerpt: "Free to use however you want under the MIT License. Clone it, fork it, customize it... whatever!"
-#     url: "/docs/license/"
-#     btn_class: "btn--primary"
-#     btn_label: "Learn more"      
+feature_row:
+  - image_path: /assets/images/model_development.png
+    alt: "model development"
+    title: "Model Development"
+    excerpt: "All models from traditional econometric models to cutting-edge machine learning models."
+    # url: "/docs/configuration/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+  - image_path: /assets/images/model_validation.png
+    alt: "model validation"
+    title: "Model Validation"
+    excerpt: "Reduce mode risk, comply with regulatory requirement, we are your solid second line of defense."
+    # url: "/docs/layouts/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+  - image_path: /assets/images/coding_service.png
+    alt: "coding service"
+    title: "Software Development"
+    excerpt: "Modernize legacy SAS codes, migration to cloud, model emulators, data pipelines..."
+    # url: "/docs/license/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"      
 ---
 
 {% include feature_row %}
