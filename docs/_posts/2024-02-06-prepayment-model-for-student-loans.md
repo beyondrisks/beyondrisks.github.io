@@ -11,7 +11,7 @@ categories:
     - econometrics
 ---
 
-We've recently constructed a prepayment model for student loans as part of our client's CECL calculation. In this article, we aim to discuss two challenges encountered during our development process. 
+We've recently developed a prepayment model for student loans as part of our client's CECL calculation. In this article, we aim to discuss two challenges encountered during our development process. 
 
 ## What is Prepayment
 Prepayment involves borrowers paying off their loans before the scheduled maturity date, either partially or in full. This article focuses specifically on full prepayment. In the realm of student loans, there are generally two types: borrower payoff and consolidation. Borrower payoff occurs when individuals have surplus funds and opt to repay their loans ahead of schedule. This repayment rate typically remains consistent over time and isn't typically the primary focus of the model. Consolidation, on the other hand, involves repaying an existing loan by obtaining a new loan at a lower interest rate. This form of prepayment essentially functions as a call option embedded within the loan. When prevailing market interest rates fall below the loan's rate, borrowers find themselves "in the money" and are more likely to exercise this option by repaying the loan. This process is often referred to as refinancing within the mortgage industry.
