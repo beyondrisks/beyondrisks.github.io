@@ -5,3 +5,5 @@ main:
     url: /blogs/
   - title: "About"
     url: /about/
+  - title: "Demos"
+    url: /demos/
