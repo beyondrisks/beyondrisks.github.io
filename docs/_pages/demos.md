@@ -1,7 +1,7 @@
 ---
 layout: single
 permalink: /demos/
-title: "Dashboard Demo"
+title: "Demos"
 ---
 
 ## 1. ChatGPT Prompt Engineering([Learn more](https://modeladvantage.pythonanywhere.com/))
