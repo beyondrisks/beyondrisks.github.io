@@ -4,10 +4,11 @@ permalink: /about/
 title: "About us"
 ---
 
+[Download Capability Statement](/assets/data/Capability%20Statement.pdf){: .btn .btn--primary}
 
-Welcome to The Model Advantage, a minority-owned small business. At our core, we are a team of dedicated economists, data scientists, engineers, and analysts who have extensive experience in model development and model validation, especially in the mortgage and banking industries. Our team also have a deep understanding of regulatory landscape.
+Welcome to The Model Advantage, [a certified Small, Micro, Minority Owned (SWaM) business](/assets/data/swam_certification.pdf) by Virginia Department of Small Business and Supplier Diversity. At our core, we are a team of dedicated economists, data scientists, engineers, and analysts who have extensive experience in model development and model validation, especially in the mortgage and banking industries. Our team also have a deep understanding of regulatory landscape.
 
-In particular, we offer model development, model validation, and custom software development services.
+In particular, we offer model development, data analytics, and custom software development services.
 
 ### Model Development Service
    
@@ -17,11 +18,9 @@ With years of experience in developing models for credit risk and prepayment ris
     
 We understand the importance of transparency and documentation in model development and validation. As such, we provide our clients with detailed model documentation that describes the model choice, model assumptions, data processing steps, optimizing process, test results, procedures of implementation, and references. We believe that clear and comprehensive documentation is essential to ensuring that our clients understand the models we develop and can use them effectively.
 
-### Model Validation Service
+### Data Analytics Service
 
-Model validation is a critical step in ensuring that your models are accurate, reliable, and perform as expected. At our company, we understand the importance of model validation and the impact that inaccurate models can have on your business.
-
-Our team of experts uses the latest tools and techniques to test and validate models, ensuring that they meet your business needs and comply with regulatory requirements. We provide detailed reports explaining our findings and recommendations for improvement if necessary. We take model validation seriously, and we are committed to helping our clients ensure that their models are accurate, reliable, and compliant with regulatory requirements.
+Our firm provides comprehensive Data Analytics and Business Intelligence (BI) solutions designed to transform fragmented data into a strategic asset. We specialize in the full data lifecycle, from ingestion and cleansing to advanced predictive modeling, enabling our clients to mitigate risk, optimize operational efficiency, and identify new revenue streams. By leveraging automated reporting and real-time visualization dashboards, we empower stakeholders with the "single source of truth" necessary for evidence-based decision-making in complex environments.
 
 ### Custom Software Development Service
    

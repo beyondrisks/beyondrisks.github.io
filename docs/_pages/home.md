@@ -9,8 +9,8 @@ header:
 #     - label: "<i class='fas fa-download'></i> Learn More"
 #       url: "/about/"
 excerpt: >
-  We utilize data, statistics, and cutting-edge machine learning techniques to solve your business problems. <br />
-  <small><a href="/about/">Learn More</a></small>
+  <span style="color: #3f4040ff; ">We utilize data, statistics, and cutting-edge machine learning techniques to solve your business problems.</span> <br />
+  <small><a href="/about/" style="color: #3f4040ff;">Learn More</a></small>
 feature_row:
   - image_path: /assets/images/model_development.png
     alt: "model development"
@@ -20,16 +20,16 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/images/model_validation.png
-    alt: "model validation"
-    title: "Model Validation"
-    excerpt: "Reduce mode risk, comply with regulatory requirement, we are your solid second line of defense."
+    alt: "data analytics"
+    title: "Data Analytics"
+    excerpt: "Gain insights from data, automate data pipelines, visualize data, and make data-driven decisions."
     # url: "/docs/layouts/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/images/coding_service.png
     alt: "coding service"
     title: "Software Development"
-    excerpt: "Modernize legacy SAS codes, migration to cloud, model emulators, data pipelines..."
+    excerpt: "Full-stack software development, from front-end to back-end, from database to cloud"
     # url: "/docs/license/"
     btn_class: "btn--primary"
     btn_label: "Learn more"      
