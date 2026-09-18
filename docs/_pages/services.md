@@ -18,6 +18,7 @@ Most "AI transformation" advice is generic. We build AI where it actually pays: 
 - **Research and monitoring agents** — track sources (regulatory updates, market data, competitor activity) and deliver summarized, cited briefs on a schedule.
 - **Reporting and analysis agents** — turn recurring analytical work (KPI pulls, exception reports, model monitoring summaries) into automated, auditable outputs.
 - **Workflow automation** — connect the AI to your existing tools: email, spreadsheets, databases, and internal systems, with human approval steps where decisions matter.
+- **Managed hosting** — we host the agent and its entire infrastructure for you. No servers to build, no services to wire together, no maintenance to babysit — you get a working system, and we handle operations, updates, and monitoring.
 
 **The data foundation**
 
