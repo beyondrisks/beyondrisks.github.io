@@ -1,12 +1,11 @@
 ---
-layout: single
-title:  "SAS to Python: Different Length of Special Characters"
+layout: post
+title: "SAS to Python: Different Length of Special Characters"
+categories:
+  - Software
+  - Data Science
 last_modified_at: 2022-02-10
 classes: wide
-categories:
-  - code
-  - SAS
-  - Python
 ---
 I would like to share the difference between SAS and Python in dealing with special characters in this artical. Please note that this article is not a comprehensive discussion about the unicode, but just focuses on a tiny issue. 
 

@@ -1,14 +1,12 @@
 ---
-layout: single
-title:  "Prepayment Model for Student Loans"
-classes: wide
-date:   2024-02-06
-last_modified_at: 2024-02-06
+layout: post
+title: "Prepayment Model for Student Loans"
 categories:
-    - prepayment risk
-    - model
-    - student loans
-    - econometrics
+  - Modeling
+classes: wide
+date: 2024-02-06
+last_modified_at: 2024-02-06
+math: true
 ---
 
 We've recently developed a prepayment model for student loans as part of our client's CECL calculation. In this article, we aim to discuss two challenges encountered during our development process. 

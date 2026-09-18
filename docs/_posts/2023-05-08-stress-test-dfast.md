@@ -1,14 +1,10 @@
 ---
-layout: single
-title:  "Stress Test -- CCAR and DFAST"
+layout: post
+title: "Stress Test -- CCAR and DFAST"
+categories:
+  - Modeling
 last_modified_at: 2023-05-13
 classes: wide
-categories:
-  - credit risk
-  - statistical model
-  - stress test
-  - DFAST
-  - CCAR
 ---
 
 ## Overview
