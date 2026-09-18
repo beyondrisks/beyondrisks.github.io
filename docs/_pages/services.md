@@ -3,7 +3,7 @@ layout: page
 permalink: /services/
 title: "Services"
 subtitle: "Models, AI agents, and software — built by one team that owns the whole chain."
-description: "The Model Advantage offers AI agents and automation, data science and model development (credit risk, prepayment, stress testing, model validation), and custom software development (SAS to Python, pipelines, dashboards)."
+description: "The Model Advantage offers AI agents and automation, data science and model development (credit risk, prepayment, stress testing, model validation, dashboards and BI), and custom systems built around your specific business logic."
 ---
 
 ## AI Agents & Automation <a id="ai-agents" style="color:inherit"></a>
@@ -50,14 +50,18 @@ Our core practice. We develop and validate statistical and machine learning mode
 - Full documentation: model choice, assumptions, data processing, optimization, test results, and implementation procedures.
 - Ongoing monitoring design so models stay defensible after deployment.
 
-## Custom Software Development <a id="software" style="color:inherit"></a>
+**Reporting and BI**
 
-Models are only as useful as the systems around them. We build the software that makes your data and models work in production.
+- Dashboards and BI — automated reporting and real-time visualization of models and portfolios (Streamlit, BigQuery, Snowflake, and similar stacks).
 
+## Custom Systems & Business Logic <a id="software" style="color:inherit"></a>
+
+We build software around your specific business — your rules, your workflows, your logic — not off-the-shelf templates.
+
+- **Custom business systems** — software built around your specific business needs and logic: pricing rules, approval workflows, and decision processes encoded into tools your team uses every day.
 - **Legacy modernization** — SAS to Python and Spark conversion, preserving results while cutting maintenance cost.
-- **Data pipelines** — ingestion, cleansing, and scheduled processing that keep downstream work reliable.
-- **Dashboards and BI** — automated reporting and real-time visualization (Streamlit, BigQuery, Snowflake, and similar stacks).
 - **Model emulators and APIs** — wrap models in fast, deployable services for production use.
+- **Data pipelines** — custom ingestion, cleansing, and scheduled processing that keep downstream work reliable.
 
 ## How engagements work
 

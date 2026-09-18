@@ -52,18 +52,18 @@ description: "The Model Advantage is a data science and AI consulting firm. We d
         <ul>
           <li>Credit risk, prepayment, and stress testing (CCAR / DFAST)</li>
           <li>Model validation and independent model review</li>
-          <li>Full documentation: assumptions, testing, and implementation</li>
+          <li>Dashboards, BI, and automated reporting</li>
         </ul>
         <a class="card-link" href="/services/#data-science">Learn more &rarr;</a>
       </div>
       <div class="card">
         <div class="icon">&lt;/&gt;</div>
-        <h3>Software Development</h3>
-        <p>Custom software and pipelines that turn models and data into tools your team actually uses.</p>
+        <h3>Custom Systems &amp; Business Logic</h3>
+        <p>Software built around your specific business — your rules, workflows, and logic — not off-the-shelf templates.</p>
         <ul>
-          <li>Legacy SAS to Python / Spark conversion</li>
-          <li>Data pipelines, automated reporting, and BI dashboards</li>
-          <li>Model emulators and cloud deployment</li>
+          <li>Custom systems for your pricing, approvals, and decision logic</li>
+          <li>Legacy SAS to Python / Spark modernization</li>
+          <li>Model emulators, APIs, and data pipelines</li>
         </ul>
         <a class="card-link" href="/services/#software">Learn more &rarr;</a>
       </div>

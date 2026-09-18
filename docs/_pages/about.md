@@ -10,7 +10,7 @@ description: "The Model Advantage is a data science and AI consulting firm, a Vi
 
 The Model Advantage is a data science and AI consulting firm. At our core, we are a team of dedicated economists, data scientists, engineers, and analysts with extensive experience in model development, model validation, and the software systems that put models to work — especially in the mortgage, banking, and federal program industries. We also bring a deep understanding of the regulatory landscape those industries operate under.
 
-We offer three services: **AI agents and automation**, **data science and model development**, and **custom software development**.
+We offer three services: **AI agents and automation**, **data science and model development**, and **custom systems built around your specific business logic**.
 
 ## Why we exist
 
