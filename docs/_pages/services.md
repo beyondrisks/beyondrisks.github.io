@@ -17,16 +17,17 @@ Most "AI transformation" advice is generic. We build AI where it actually pays: 
 - **Document-processing agents** — extract, classify, and route information from contracts, statements, applications, and correspondence; produce structured outputs your systems can act on.
 - **Research and monitoring agents** — track sources (regulatory updates, market data, competitor activity) and deliver summarized, cited briefs on a schedule.
 - **Reporting and analysis agents** — turn recurring analytical work (KPI pulls, exception reports, model monitoring summaries) into automated, auditable outputs.
+- **RAG knowledge agents** — cited, verifiable answers grounded in your own documents and knowledge, not what the model happens to remember.
 - **Workflow automation** — connect the AI to your existing tools: email, spreadsheets, databases, and internal systems, with human approval steps where decisions matter.
 - **Managed hosting** — we host the agent and its entire infrastructure for you. No servers to build, no services to wire together, no maintenance to babysit — you get a working system, and we handle operations, updates, and monitoring.
+- **Local LLM configuration** — private, on-premises model deployment for data that can't leave your building: model selection, quantization, inference setup, and an honest read on when local beats the cloud.
 
 **The data foundation**
 
 Data is the foundation of an AI agent — an agent is only as good as the information it can reach. We build that layer before the agent, not after.
 
-- **Data consolidation** — connect your siloed sources (databases, spreadsheets, document repositories, SaaS tools, internal systems) into one agent-ready foundation, so agents answer from the whole picture instead of a single file.
-- **RAG builds** — retrieval-augmented generation over your documents and knowledge: ingestion, chunking, retrieval, and cited answers, so outputs are grounded in your sources and verifiable.
-- **Local LLM configuration** — private, on-premises model deployment for data that can't leave your building: model selection, quantization, inference setup, and an honest read on when local beats the cloud.
+- **Data consolidation** — connect your siloed sources (databases, spreadsheets, document repositories, SaaS tools, internal systems) into one agent-ready foundation, with the pipelines to ingest, cleanse, and keep it current — so agents answer from the whole picture instead of a single file.
+- **Retrieval and indexing** — chunking, embeddings, and vector stores that let agents search, retrieve, and cite your knowledge — the engine that powers RAG.
 
 **How we work with AI**
 
