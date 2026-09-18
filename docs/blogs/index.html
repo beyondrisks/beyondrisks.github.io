@@ -1,0 +1,45 @@
+---
+layout: default
+permalink: /blogs/
+title: "Blog"
+subtitle: "Practical writing on AI, data science, and modeling."
+description: "The Model Advantage blog — practical writing on AI agents, data science, statistical modeling, and software."
+---
+
+<header class="page-header">
+  <div class="container">
+    <h1 class="page-title">Blog</h1>
+    <p class="page-subtitle">Practical writing on AI, data science, and modeling — no hype, just what we've learned doing the work.</p>
+  </div>
+</header>
+
+<div class="container" style="padding:56px 24px 72px;">
+  <div class="blog-layout">
+    <div>
+      <ul class="post-list">
+        {% for post in site.posts %}
+        <li>
+          <a href="{{ post.url }}">
+            <span class="post-title">{{ post.title }}</span><br>
+            <span class="post-meta">{{ post.date | date: "%B %-d, %Y" }}{% if post.categories.size > 0 %} &middot; {{ post.categories | join: ", " }}{% endif %}</span>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <aside class="blog-sidebar">
+      <h3>Topics</h3>
+      {% assign cats = "" %}
+      {% for post in site.posts %}
+        {% for cat in post.categories %}
+          {% unless cats contains cat %}{% assign cats = cats | append: cat | append: "," %}{% endunless %}
+        {% endfor %}
+      {% endfor %}
+      {% assign cat_list = cats | split: "," %}
+      {% for cat in cat_list %}
+        <span class="tag">{{ cat }}</span>
+      {% endfor %}
+    </aside>
+  </div>
+</div>

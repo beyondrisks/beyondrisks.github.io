@@ -1,12 +1,11 @@
 ---
-layout: single
-title:  "SAS to Python: Read Binary Numerical Data"
+layout: post
+title: "SAS to Python: Read Binary Numerical Data"
+categories:
+  - Software
+  - Data Science
 last_modified_at: 2022-02-04
 classes: wide
-categories:
-  - code
-  - SAS
-  - Python
 ---
 
 In this article we will discuss the difference in reading binary numerical data between SAS and Python.

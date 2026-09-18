@@ -1,0 +1,18 @@
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="{{ '/' | prepend: site.baseurl }}">
+      <img src="{{ '/assets/images/model_advantage_slice.png' | prepend: site.baseurl }}" alt="The Model Advantage">
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.body.classList.toggle('nav-open')">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav">
+      <a href="{{ '/services/' | prepend: site.baseurl }}">Services</a>
+      <a href="{{ '/clients/' | prepend: site.baseurl }}">Clients</a>
+      <a href="{{ '/about/' | prepend: site.baseurl }}">About</a>
+      <a href="{{ '/blogs/' | prepend: site.baseurl }}">Blog</a>
+      <a href="{{ '/demos/' | prepend: site.baseurl }}">Demos</a>
+      <a class="btn btn-small" href="{{ '/contact/' | prepend: site.baseurl }}">Contact</a>
+    </nav>
+  </div>
+</header>

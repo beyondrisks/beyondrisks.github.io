@@ -1,11 +1,10 @@
 ---
-layout: single
-title:  "Model Validation"
+layout: post
+title: "Model Validation"
+categories:
+  - Modeling
 last_modified_at: 2023-05-15
 classes: wide
-categories:
-  - statistical model
-  - model validation
 ---
 >*All the models are wrong, but some are useful. --- George Box*
 

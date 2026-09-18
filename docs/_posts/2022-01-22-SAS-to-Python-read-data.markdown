@@ -1,9 +1,11 @@
 ---
-layout: single
-title:  "SAS to Python: Read Data"
+layout: post
+title: "SAS to Python: Read Data"
+categories:
+  - Software
+  - Data Science
 classes: wide
-date:   2022-01-22
-categories: code SAS Python
+date: 2022-01-22
 ---
 
 As much as we love SAS, we cannot deny the trend that Python is replacing SAS in a very fast pace. In this article we will discuss how to use Python to read data. The Python package used here is `pandas`. 

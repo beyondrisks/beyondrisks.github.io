@@ -1,10 +1,11 @@
 ---
-layout: single
+layout: page
 permalink: /demos/
 title: "Demos"
+subtitle: "Working examples of what we build."
 ---
 
-## 1. ChatGPT Prompt Engineering([Learn more](https://modeladvantage.pythonanywhere.com/))
+## 1. ChatGPT Prompt Engineering ([Learn more](https://modeladvantage.pythonanywhere.com/))
 ![SAS-Python-ChatGPT][prompt_engineering]
 
 ### TL;DR

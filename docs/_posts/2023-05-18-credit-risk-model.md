@@ -1,13 +1,13 @@
 ---
-layout: single
-title:  "Credit Risk Models"
-classes: wide
-date:   2023-05-18
-last_modified_at: 2023-05-18
+layout: post
+title: "Credit Risk Models"
 categories:
-    - credit risk
-    - model
-    - econometrics
+  - Modeling
+  - Data Science
+classes: wide
+date: 2023-05-18
+last_modified_at: 2023-05-18
+math: true
 ---
 
 ## What is Credit Risk
