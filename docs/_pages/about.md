@@ -16,23 +16,21 @@ We offer three services: **AI agents and automation**, **data science and model 
 
 Most consulting firms can do one of three things: build a model, build software, or talk about AI. Few can credibly do all three, and fewer still can stand behind the work when a regulator, a client's board, or a production environment asks hard questions. That gap is what we fill. We build models that are accurate *and* defensible, AI that is useful *and* auditable, and software that is maintained *and* handed over cleanly.
 
-## Model development
+## Data Science & Model Development
 
 We use advanced statistical techniques and machine learning algorithms to develop models that are both accurate and reliable. With years of experience developing models for credit risk and prepayment risk, our team is well-equipped to create models that meet regulatory requirements — such as those for [CCAR and DFAST stress testing]({% post_url 2023-05-08-stress-test-dfast %}) — while also providing genuine insight into your business's performance.
 
 We understand the importance of transparency and documentation. We provide detailed model documentation that describes the model choice, assumptions, data processing steps, optimization process, test results, implementation procedures, and references. Clear, comprehensive documentation is what lets your team — and your regulators — trust the model.
 
-## Data analytics
-
-We provide comprehensive data analytics and business intelligence solutions that transform fragmented data into a strategic asset. We specialize in the full data lifecycle, from ingestion and cleansing to advanced predictive modeling, enabling clients to mitigate risk, optimize operations, and identify new revenue streams. Automated reporting and real-time visualization dashboards give stakeholders the "single source of truth" needed for evidence-based decisions in complex environments.
+We also cover the full data lifecycle around those models: ingestion, cleansing, and advanced analytics that turn fragmented data into a strategic asset, plus automated reporting and real-time dashboards (BI) that give stakeholders a single source of truth for evidence-based decisions.
 
 ## AI agents and automation
 
 We build practical AI that removes repetitive work from operations — document processing, research and monitoring, recurring reporting — with the guardrails, evaluation, and human oversight that make it safe to rely on. We are deliberate about where AI helps and where it doesn't; our job is the outcome, not the technology.
 
-## Custom software
+## Custom systems & business logic
 
-We create customized software that automates business processes, streamlines operations, and improves efficiency. Whether you need to convert legacy SAS code to Python and Spark, build data pipelines, or develop dashboards and model emulators, our solutions are designed to be efficient, scalable, and user-friendly.
+We build software around your specific business — your rules, your workflows, your logic — not off-the-shelf templates. That means custom systems that encode your pricing rules, approval workflows, and decision processes into tools your team uses every day, alongside the supporting work: legacy SAS to Python and Spark conversion, data pipelines, model emulators, and APIs. The goal is software that is efficient, scalable, and user-friendly — and that actually fits how your business runs.
 
 ## Credentials
 
