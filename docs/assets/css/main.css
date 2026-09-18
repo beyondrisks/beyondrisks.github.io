@@ -232,8 +232,9 @@ a:hover { color: var(--green); text-decoration: underline; }
   text-align: center; background: #fff; border: 1px solid var(--line);
   border-radius: var(--radius); padding: 26px 18px;
 }
-.agency .name { font-size: 20px; font-weight: 800; letter-spacing: 0.04em; color: var(--ink); }
+.agency .name { font-size: 20px; font-weight: 800; letter-spacing: 0.04em; color: var(--ink); margin-top: 14px; }
 .agency .full { font-size: 13.5px; color: var(--ink-faint); margin-top: 6px; }
+.agency-seal { width: 92px; height: 92px; object-fit: contain; }
 
 /* ---------- CTA ---------- */
 .cta { text-align: center; }

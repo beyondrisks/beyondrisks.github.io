@@ -10,7 +10,7 @@ description: "The Model Advantage is a data science and AI consulting firm. We d
 url: "https://www.themodeladvantage.com"
 baseurl: ""
 repository: "beyondrisks/beyondrisks.github.io"
-email: "info@themodeladvantage.com"
+email: "contact@themodeladvantage.com"
 logo: "/assets/images/model_advantage_slice.png"
 google_analytics: G-FPN3XBMRHL
 
@@ -18,7 +18,7 @@ google_analytics: G-FPN3XBMRHL
 author:
   name: "The Model Advantage, LLC"
   location: "United States"
-  email: "info@themodeladvantage.com"
+  email: "contact@themodeladvantage.com"
 
 # GSA contract (shown on Clients page and footer)
 gsa:

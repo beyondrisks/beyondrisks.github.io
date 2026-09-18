@@ -3,7 +3,7 @@ layout: page
 permalink: /contact/
 title: "Contact"
 subtitle: "Tell us what you're trying to do. We'll tell you honestly whether we can help."
-description: "Contact The Model Advantage at info@themodeladvantage.com. GSA MAS contract holder 47QRAA26D009T."
+description: "Contact The Model Advantage at contact@themodeladvantage.com. GSA MAS contract holder 47QRAA26D009T."
 ---
 
 <p>The fastest way to reach us is by email. For most inquiries we respond within one business day.</p>
@@ -11,7 +11,7 @@ description: "Contact The Model Advantage at info@themodeladvantage.com. GSA MAS
 <div class="client-grid">
   <div class="client-card">
     <h3>Email</h3>
-    <p><a href="mailto:info@themodeladvantage.com" style="font-size:18px; font-weight:700;">info@themodeladvantage.com</a></p>
+    <p><a href="mailto:contact@themodeladvantage.com" style="font-size:18px; font-weight:700;">contact@themodeladvantage.com</a></p>
     <p>Include a short description of the problem, the systems or data involved, and any timeline you're working against. The more specific, the better we can respond.</p>
   </div>
   <div class="client-card">

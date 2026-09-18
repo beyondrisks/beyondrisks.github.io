@@ -12,14 +12,17 @@ Our models, analytics, and automation have supported programs at three U.S. fede
 
 <div class="agency-row">
   <div class="agency">
+    <img class="agency-seal" src="{{ site.baseurl }}/assets/images/seal_hud.png" alt="Seal of the U.S. Department of Housing and Urban Development">
     <div class="name">HUD</div>
     <div class="full">U.S. Department of Housing and Urban Development</div>
   </div>
   <div class="agency">
+    <img class="agency-seal" src="{{ site.baseurl }}/assets/images/seal_usda.png" alt="Seal of the U.S. Department of Agriculture">
     <div class="name">USDA</div>
     <div class="full">U.S. Department of Agriculture</div>
   </div>
   <div class="agency">
+    <img class="agency-seal" src="{{ site.baseurl }}/assets/images/seal_doe.png" alt="Seal of the U.S. Department of Energy">
     <div class="name">DOE</div>
     <div class="full">U.S. Department of Energy</div>
   </div>
