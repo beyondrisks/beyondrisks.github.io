@@ -19,6 +19,14 @@ Most "AI transformation" advice is generic. We build AI where it actually pays: 
 - **Reporting and analysis agents** — turn recurring analytical work (KPI pulls, exception reports, model monitoring summaries) into automated, auditable outputs.
 - **Workflow automation** — connect the AI to your existing tools: email, spreadsheets, databases, and internal systems, with human approval steps where decisions matter.
 
+**The data foundation**
+
+Data is the foundation of an AI agent — an agent is only as good as the information it can reach. We build that layer before the agent, not after.
+
+- **Data consolidation** — connect your siloed sources (databases, spreadsheets, document repositories, SaaS tools, internal systems) into one agent-ready foundation, so agents answer from the whole picture instead of a single file.
+- **RAG builds** — retrieval-augmented generation over your documents and knowledge: ingestion, chunking, retrieval, and cited answers, so outputs are grounded in your sources and verifiable.
+- **Local LLM configuration** — private, on-premises model deployment for data that can't leave your building: model selection, quantization, inference setup, and an honest read on when local beats the cloud.
+
 **How we work with AI**
 
 We treat LLMs as components, not magic. Every deployment includes evaluation against your real inputs, guardrails and error handling, logging so outputs are auditable, and a clear definition of when a human must be in the loop. If a rule-based solution is cheaper and more reliable, we'll say so — our job is the outcome, not the technology.

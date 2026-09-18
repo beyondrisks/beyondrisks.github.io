@@ -40,6 +40,7 @@ description: "The Model Advantage is a data science and AI consulting firm. We d
         <ul>
           <li>Custom AI agents for document processing, research, and reporting</li>
           <li>Workflow automation across your tools and data systems</li>
+          <li>The data foundation: multi-source consolidation, RAG, and local LLMs</li>
           <li>LLM integrations with guardrails, evaluation, and human oversight</li>
         </ul>
         <a class="card-link" href="/services/#ai-agents">Learn more &rarr;</a>
