@@ -131,6 +131,14 @@ The same VM also runs our n8n automation stack and our Obsidian sync database. T
 
 Usage is unremarkable, which is the point: the server speaks the OpenAI API on port 8080, so opencode, Hermes Agent, and any other tool just point at it. We run one harness at a time, occasionally two together, and have not hit concurrency issues. The four-slot server has headroom we barely use.
 
+One more thing you get for free, and it is worth showing. The server ships with its own web chat interface at the same URL, so you can open the model in a browser with no extra software. It is a real chat UI: a conversation list, file and image upload (which is what the multimodal model is for), and a settings panel where you can adjust the system message, temperature, top-k, and penalties per session. The defaults mirror the server flags, so temperature shows up as 0.6, exactly as in the compose file above.
+
+![The llama.cpp built-in chat UI](/assets/images/llamacpp-chat-ui.png)
+
+![The UI settings panel, with the sampling controls](/assets/images/llamacpp-settings-ui.png)
+
+We use it for quick checks and for letting clients poke at the model themselves. The agent harness is still the front door for real work, but the built-in UI is a nice free tool, and it is one of the reasons llama.cpp feels like a complete server rather than just an API.
+
 The limits, stated plainly. Context: 128K, about 10% of the largest commercial windows, but as noted, the harnesses' automatic compaction has so far made that ceiling a non-blocker. Concurrency: low, by design. We do not run a queue of customers; we run one or two agents doing real work. The tooling should match the load, not the other way around. And the card: fully committed, one workload at a time.
 
 ## Observability: The Gap, and the Two-Step Fix
