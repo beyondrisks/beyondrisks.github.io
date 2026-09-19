@@ -47,11 +47,17 @@ Here is the arithmetic that made our setup possible, straight from the numbers a
 
 19,960 + 12,294 + 720 = 32,974 MiB, against 32,110 MiB of VRAM.
 
-It does not fit. **On this card, 128K context is impossible without KV-cache quantization.** The fix is two flags:
+It does not fit. **On this card, 128K context is impossible without KV-cache quantization.** The fix is three flags:
 
     --cache-type-k q8_0 --cache-type-v q8_0 --flash-attn on
 
-Q8_0 stores each KV element in 8 bits instead of the default 16, roughly half the footprint, with negligible quality loss in practice. Flash attention is required for the quantized V cache. With the flags, the KV cache drops to 6,147 MiB, the whole rig fits with 2,269 MiB to spare, and the server reports `n_ctx_slot = 131072`.
+Two of them do the work; the third makes them possible.
+
+`--cache-type-k` and `--cache-type-v` set the precision of the key and value tensors in the cache, independently. The default is f16, 16 bits per element. Q8_0 stores each element in 8 bits, so the cache is roughly half the size, and the quality loss in practice is negligible: Q8_0 is the standard "free" choice, and it is what we run. You can go lower (q5, q4) to buy even more context, but the loss starts to become measurable on long runs, and we did not need the extra room. The point is that the cache precision is a knob you control, not a fixed property of the model.
+
+`--flash-attn on` is the part people miss. Flash attention is a way of computing the attention operation that keeps the intermediate math out of slow memory, and it is faster and less memory-hungry than the naive approach. With llama.cpp it is also a prerequisite: the quantized V cache is only supported when flash attention is enabled. So you cannot just quantize the cache and leave flash attention off; the two flags travel together. On a modern card it is on by default in most builds, but we set it explicitly so the intent is in the compose file.
+
+With the three flags, the KV cache drops from about 12,294 MiB to 6,147 MiB, the whole rig fits with 2,269 MiB to spare, and the server reports `n_ctx_slot = 131072`. That is the entire trick: one precision change on the cache, plus the attention mode that allows it.
 
 The honest limit: 128K is about 10% of the largest commercial context windows. In practice this has mattered less than we expected, because the agent harnesses we use (opencode, Hermes Agent) compact the context automatically, and so far we have not seen a compaction artifact we could name. The context ceiling is a real constraint; the harness manages it well enough that we have not been blocked by it.
 
@@ -133,7 +139,9 @@ Usage is unremarkable, which is the point: the server speaks the OpenAI API on p
 
 One more thing you get for free, and it is worth showing. The server ships with its own web chat interface at the same URL, so you can open the model in a browser with no extra software. It is a real chat UI: a conversation list, file and image upload (which is what the multimodal model is for), and a settings panel where you can adjust the system message, temperature, top-k, and penalties per session. The defaults mirror the server flags, so temperature shows up as 0.6, exactly as in the compose file above.
 
-![The llama.cpp built-in chat UI](/assets/images/llamacpp-chat-ui.png)
+The screenshot is a real exchange with the model, not a mockup. We asked it to explain the KV cache, and it answered correctly, with the run stats right there: the model and quant (Qwen3.8, 27B, UD-Q6_K), the token count, the time, and the decode speed. That stats line is useful on its own, because it is the first place you can sanity-check that the rig is doing what you think it is doing.
+
+![A real conversation in the llama.cpp built-in chat UI, with the run stats](/assets/images/llamacpp-chat-ui.png)
 
 ![The UI settings panel, with the sampling controls](/assets/images/llamacpp-settings-ui.png)
 
