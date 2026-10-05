@@ -131,22 +131,6 @@ What you lose, in order of how much it hurt us:
 
 One question: prompt and docs are enough. Repeated questions, across four harnesses, with a data source that changes under you: this.
 
-## War story #1: the API is the hard part, not the MCP
-
-The protocol layer was the easy 20%. The server's actual job is translating between the agent's intent and an API that has opinions. A sample of what we had to discover, test, and then encode in docstrings:
-
-- The search endpoints accept fiscal years, time periods, and agency filters in different shapes, and some combinations silently return nothing rather than an error.
-- Award IDs come in two families (PIID vs. UEI) that look similar and mean different things; the recipient lookup returns both and the docstring now says which is which and which to use for follow-up queries.
-- The "search" LLM endpoint we hoped to expose is key-gated, so the server ships without it rather than with a tool that would fail for keyless users.
-
-The lesson: an MCP server is a thin layer, and your time goes into learning the data source, verifying every endpoint against live responses, and writing docstrings the agent can actually use. The framework gives you the scaffolding; the value is the domain knowledge in the layer.
-
-## War story #2: the SDK renamed itself mid-project
-
-The official MCP Python SDK's v2 release renamed the class we built on — `FastMCP` became `MCPServer`, same API, new import path. Our first response was the obvious one: a try/except import that worked on both major versions. It worked, and it was exactly the kind of compatibility cruft you do not want to ship.
-
-The second response was better: the `fastmcp` framework (gofastmcp.com) is a thin layer *on top of* the official SDK that exists precisely to absorb this churn — `from fastmcp import FastMCP`, one dependency, and the framework tracks the SDK releases so you never pin or migrate the wire protocol yourself. The entire dual-version workaround deleted down to a single import line. The meta-lesson: build on the layer that tracks the protocol, not the protocol itself.
-
 ## One file, four clients
 
 Because the server is stdio and self-contained, "deploying" it in a harness is a registration line. Codex:
@@ -172,10 +156,6 @@ We deliberately kept the server local. With stdio, each harness spawns its own p
 
 An MCP server can equally be *served online*: the same file running as a long-lived HTTP service at a URL, with any number of clients connecting over the network. The framework makes this a flag away, and we verified it works — pointed a client at the URL, got all 14 tools back, called one over HTTP. For this project we do not want it: one data shop, a handful of machines, and a service we would then have to keep alive, monitor, and authenticate. The rule of thumb we landed on: stdio until you have a concrete second consumer (another team, a phone, a client-facing app), then serve it and put it behind auth, because a public URL is reachable by anyone who finds it.
 
-## How we test it
-
-The part that breaks is the remote API, not the code. So the test suite does not mock the data source. It boots the real server over stdio, connects with the framework's own client — the same code path every harness uses — and runs 19 checks against live USAspending responses: every tool called, a real company's recipient ID resolved and cross-checked, error paths confirmed to surface as proper tool errors rather than crashes. `uv run python test_e2e.py`, and the answer is 19/19 as of writing. When the API churns again, that suite goes red before any client does.
-
 ## What it cannot do
 
 - The key-gated LLM search endpoint is not exposed, so free-text "find me anything about X" queries are assembled from the structured tools, which is powerful but not a search engine.
@@ -186,4 +166,4 @@ The part that breaks is the remote API, not the code. So the test suite does not
 
 Strip the federal part and the general shape is: *a stable API, a lot of small quirks, and the same structured queries repeated by more than one consumer.* That describes a client's ERP, a data warehouse, an internal system with a login-free internal API. The one-file pattern — verified endpoints, quirks in the docstrings, slim projections, a live E2E suite — applies unchanged, and it is how we would wire an agent to a client's proprietary data rather than a public one.
 
-The full source and test suite for the USAspending server are in our repository: `https://github.com/[REDACTED]`. If you have an API your team keeps querying by hand, the gap between that and an agent that can query it on its own is usually a single file.
+The full source and test suite for the USAspending server are in [our repository](https://github.com/zhangbingyu/usaspending-intel). If you have an API your team keeps querying by hand, the gap between that and an agent that can query it on its own is usually a single file.
