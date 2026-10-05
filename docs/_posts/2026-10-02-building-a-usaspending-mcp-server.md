@@ -87,7 +87,7 @@ The tools group into five jobs. An agent typically works its way down the list: 
 
 ## A demonstration: a real session
 
-The GIF below is not a walkthrough. It is a recording of a live Hermes session from October 5, 2026, running against the server in this environment — the `.cast` file, not a re-render, and the numbers are what the API returned that morning, not staged output. Three questions, played at 2× speed:
+The GIF below is not a walkthrough. It is a recording of a live Hermes session from October 5, 2026, running against the server in this environment — the `.cast` file, not a re-render, and the numbers are what the API returned that morning, not staged output. Three questions, at original speed:
 
 ![The live session: a DoD FY2025 spend analysis through the usaspending MCP](/assets/images/usaspending-mcp-demo.gif)
 
@@ -116,7 +116,7 @@ And the last two lines of that profile output in the recording are the ones I wo
 
 A weaker pipeline would have printed the profile totals and let a client notice the inconsistency in a deliverable. This one noticed it during the call, said so in the answer, and recommended which number to trust. That is the whole argument for the layer: the protocol is boring, but a layer that has been run against the real thing knows what "looks wrong" looks like.
 
-The source recording is a 4-minute-10-second asciinema `.cast` file — 24 messages, 18 tool calls, per the session summary at the end of the recording. The GIF is that file converted frame-by-frame and re-timed to 2×; the `.cast` itself can be embedded with playback controls (asciinema-player) if you want readers to step through the full-speed session.
+The GIF is that session converted frame-by-frame. The original asciinema `.cast` can be embedded with playback controls (asciinema-player) if you want readers to step through it themselves.
 
 ## You could do this without MCP — here is what you lose
 
