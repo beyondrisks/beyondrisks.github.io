@@ -5,11 +5,13 @@ title: "Demos"
 subtitle: "Working examples of what we build."
 ---
 
-## 1. ChatGPT Prompt Engineering ([Learn more](https://modeladvantage.pythonanywhere.com/))
-![SAS-Python-ChatGPT][prompt_engineering]
+## 1. AI Agent for Small Business Operations ([Try it](https://demo.themodeladvantage.com/))
+![SMB AI Agent Demo][smb_agent_demo]
 
 ### TL;DR
-In this demonstration, we harnessed the power of the ChatGPT API to create a SAS to Python translator. Through strategic manipulation of prompts, we engineered a seamless flow to facilitate the conversion process. Leveraging the [FLASK](https://flask.palletsprojects.com/) web framework, we developed a user-friendly website interface. This platform accepts SAS code input, visually presents the data flow, and subsequently generates a corresponding Python script.
+This is a working AI agent running a small business's front of house and back office, end to end, on one fictional company so you can press it. You can play as a customer: ask what a service costs, get an estimate priced from the company's own catalog, and book an appointment. Or play as office staff: scan an invoice into the books, and read an accounts-receivable aging report with a payment-risk estimate on every open bill. The agent reads the company's own records, proposes the answer or the entry, and nothing is sent or recorded until a person confirms. Every answer is traceable: the agent cites the document it read, and when it cannot find the answer it says so instead of guessing.
+
+The demo runs on synthetic records, so there is no company data to leak and no limit on what you can try. [Open the demo](https://demo.themodeladvantage.com/) and press the desks yourself: the customer chatbot, the invoice scan, the bookkeeping desk, and the AR aging page.
 
 ---
 
@@ -27,4 +29,4 @@ Furthermore, Streamlit simplifies deployment, offering seamless integration with
 In summary, our Freddie Mac Loan Performance Dashboard leverages the power of Streamlit to provide an engaging and accessible platform for analyzing loan performance data. With its cost-effective development process and effortless cloud deployment capabilities, Streamlit empowers us to deliver valuable insights efficiently, driving informed decision-making and enhancing collaboration within our organization.
 
 [dashboard_screenshot]: ../assets/images/dashboard_screenshot.png
-[prompt_engineering]: ../assets/images/sas_python_screenshot.png
+[smb_agent_demo]: ../assets/images/smb_agent_demo.png
